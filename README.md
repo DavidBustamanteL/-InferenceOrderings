@@ -7,6 +7,12 @@ The function evaluates all 3-candidate subsets **(triplets)** in an election and
 
 This README focuses exclusively on the main function and its internal subfunctions.
 
+
+# Data
+
+The data employed is from the replication files provided in Barbaro and Kurella (2025).
+
+
 # Main Function
 
 ## ```run_one_election(df, N, phi, seed, pseudocount, ord_levels)```
