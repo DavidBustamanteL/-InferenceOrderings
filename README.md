@@ -55,14 +55,21 @@ Within each triplet, candidates are relabeled locally as A, B, and C to standard
 
 ## 2. Ranking Encoding
 
-Each respondent’s ranking over A, B, C is converted into one of 13 canonical ordering strings.
+Each respondent’s ranking over A, B, C is converted into one of 13 canonical ordering strings:
 
-Examples include:
-
-- $A\sim B\sim C$
-- $A\succ B \succ C$
-- $A\sim B\succ C$
-- $B\succ C\succ A$
+- $A \succ B \succ C$
+- $A \succ C \succ B$
+- $B \succ A \succ C$
+- $B \succ C \succ A$
+- $C \succ A \succ B$
+- $C \succ B \succ A$
+- $A \sim B \succ C$
+- $A \sim C \succ B$
+- $B \sim C \succ A$
+- $A \succ B \sim C$
+- $B \succ A \sim C$
+- $C \succ A \sim B$
+- $A \sim B \sim C$
 
 
 The encoding logic works as follows:
