@@ -66,8 +66,8 @@ Examples include:
 
 The encoding logic works as follows:
 
-- Candidates tied at the same rank are joined with "=".
-- The preferences of a candidate over another one are joined with ">".
+- Candidates tied at the same rank are joined with "$\sim$".
+- The preferences of a candidate over another one are joined with "$\succ$".
 
 Each respondent, therefore, contributes exactly one ordering string.
 
