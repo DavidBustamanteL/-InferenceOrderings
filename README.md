@@ -1,4 +1,9 @@
 # Inference Orderings DMCP
 ## Replication file to Dirichlet Monte Carlo Perturbations - Barbaro & Bustamante Lazo
 
-This repository implements an R pipeline to estimate **Condorcet cycle rates** in ranked-choice elections using **Dirichlet perturbations** of observed ranking distributions.
+This repository implements the function ´´´run_one_election()´´´ to estimate Condorcet cycle probabilities in ranked-choice elections using Dirichlet Monte Carlo perturbations of empirically observed preference distributions.
+
+The function evaluates all 3-candidate subsets (triplets) within an election and computes the probability of observing majority cycles under sampling uncertainty.
+
+This README focuses exclusively on the main function and its internal subfunctions.
+
