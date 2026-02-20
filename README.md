@@ -76,14 +76,13 @@ Each respondent’s ranking over A, B, C is converted into one of 13 canonical o
 - $C \succ A \sim B$
 - $C \succ A \succ B$
 - $C \succ B \succ A$
-- 
 
 The encoding logic works as follows:
 
 - Candidates tied at the same rank are joined with $\sim$.
 - The preferences of a candidate over another one are joined with $\succ$.
 
-Each respondent, therefore, contributes exactly one ordering string.
+For every respondent, the reported ranking is mapped to exactly one canonical ordering string.
 
 
 ## 3. Frequency Vector Construction ```(make_vec13)```
