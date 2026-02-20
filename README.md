@@ -80,3 +80,16 @@ Outputs:
 
 - vec_list: raw frequency counts
 - prop_list: normalized proportions (counts divided by total)
+
+
+## 4. Dirichlet Perturbations
+
+Observed counts are scaled by the concentration parameter:
+
+alpha = counts × phi
+
+For each triplet, N draws are generated from a Dirichlet distribution using these alpha parameters.
+
+Each draw represents a plausible population preference distribution consistent with the observed data.
+
+Column ordering is enforced to match ```ord_levels``` to ensure stable indexing.
