@@ -62,7 +62,8 @@ Examples include:
 - A>B>C
 - A=B>C
 - B>C>A
-- A~B~C
+- A=B=C
+- $A\sim B \succ C$
 
 The encoding logic works as follows:
 
