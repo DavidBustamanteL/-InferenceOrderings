@@ -59,10 +59,11 @@ Each respondent’s ranking over A, B, C is converted into one of 13 canonical o
 
 Examples include:
 
+- $A\sim B\sim C$
 - $A\succ B \succ C$
 - $A\sim B\succ C$
 - $B\succ C\succ A$
-- $A\sim B\sim C$
+
 
 The encoding logic works as follows:
 
