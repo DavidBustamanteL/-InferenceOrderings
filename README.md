@@ -121,7 +121,6 @@ For every Dirichlet draw:
 1. Pairwise vote shares are computed using the index sets.
 2. Pairwise winners are determined.
 3. A final outcome is assigned:
-
    - **"A"**, **"B"**, **"C"** if a Condorcet winner exists  
    - **"Tie"** if majority relations are unresolved  
    - **"Cycle"** if a majority cycle occurs  
