@@ -100,7 +100,7 @@ Outputs:
 
 Observed counts are scaled by the concentration parameter:
 
-    α = φ · p̂
+    α = φ · c
 
 For each triplet, N draws are generated from a Dirichlet distribution using these alpha parameters.
 
