@@ -66,8 +66,8 @@ Examples include:
 
 The encoding logic works as follows:
 
-- Candidates tied at the same rank are joined with "\sim".
-- The preferences of a candidate over another one are joined with "\succ".
+- Candidates tied at the same rank are joined with \sim.
+- The preferences of a candidate over another one are joined with \succ.
 
 Each respondent, therefore, contributes exactly one ordering string.
 
@@ -84,8 +84,8 @@ Missing ordering types receive zero counts.
 
 Outputs:
 
-- vec_list: raw frequency counts
-- prop_list: normalized proportions (counts divided by total)
+- ```vec_list```: raw frequency counts
+- ```prop_list```: normalized proportions (counts divided by total)
 
 
 ## 4. Dirichlet Perturbations
@@ -105,9 +105,9 @@ Column ordering is enforced to match ```ord_levels``` to ensure stable indexing.
 
 For each of the 13 ordering types, contributions to pairwise contests are precomputed:
 
-- A vs B
-- A vs C
-- B vs C
+- $A vs B$
+- $A vs C$
+- $B vs C$
 
 Rules:
 
