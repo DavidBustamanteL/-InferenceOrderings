@@ -13,8 +13,8 @@ This README focuses exclusively on the main function and its internal subfunctio
 The data employed is from the replication files provided in [Barbaro and Kurella (2025)](https://doi.org/10.1007/s11127-025-01353-7).
 
 
-# WARNING
-**Results — WITH LINUX ONLY!** ⚠️
+# WARNING ⚠️
+**Results — WITH LINUX ONLY!** 
  
 **Urgent:** If you run this script on **Windows**, you must adjust the function — in particular, **do NOT use ```mclapply```**.
 
