@@ -118,12 +118,12 @@ These index sets allow fast vectorized computation of pairwise majority shares f
 
 For every Dirichlet draw:
 
-- Pairwise vote shares are computed using the index sets.
-- Pairwise winners are determined.
-- A final outcome is assigned:
+1. Pairwise vote shares are computed using the index sets.
+2. Pairwise winners are determined.
+3. A final outcome is assigned:
 
--- "A", "B", "C" if a Condorcet winner exists
--- "Tie" if majority relations are unresolved
--- "Cycle" if a majority cycle occurs
+   - **"A"**, **"B"**, **"C"** if a Condorcet winner exists  
+   - **"Tie"** if majority relations are unresolved  
+   - **"Cycle"** if a majority cycle occurs  
 
 This classification is performed independently for every triplet and every draw.
