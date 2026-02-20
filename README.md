@@ -66,7 +66,7 @@ The encoding logic works as follows:
 Each respondent, therefore, contributes exactly one ordering string.
 
 
-## 3. Frequency Vector Construction (make_vec13)
+## 3. Frequency Vector Construction ```(make_vec13)```
 
 For each triplet:
 
