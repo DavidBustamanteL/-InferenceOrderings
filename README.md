@@ -62,18 +62,15 @@ For an election with m candidates, the number of triplets equals choose(m, 3).
 Within each triplet, candidates are relabeled locally as A, B, and C to standardize processing.
 
 
-## 2. Ranking Encoding (encode_ranking)
+## 2. Ranking Encoding
 
 Each respondent’s ranking over A, B, C is converted into one of 13 canonical ordering strings.
 
 Examples include:
 
 - A>B>C
-
 - A=B>C
-
 - B>C>A
-
 - A=B=C
 
 The encoding logic works as follows:
@@ -82,4 +79,20 @@ The encoding logic works as follows:
 
 - Different rank levels are joined with ">".
 
-Each respondent therefore contributes exactly one ordering string.
+Each respondent, therefore, contributes exactly one ordering string.
+
+
+## 3. Frequency Vector Construction (make_vec13)
+
+For each triplet:
+
+- 1. Ordering strings are tabulated.
+- 2. A fixed-length vector of length 13 is created.
+- 3. The order of entries matches ord_levels exactly.
+
+Missing ordering types receive zero counts.
+
+Outputs:
+
+- vec_list: raw frequency counts
+- prop_list: normalized proportions (counts divided by total)
