@@ -159,9 +159,9 @@ The function computes:
 
 ## Minimal Usage
 
-A single election can be analyzed by calling:
+A single election can be analyzed, e.g., by calling:
 
-    res = run_one_election(elections[[Country_Year]])
+    res = run_one_election(elections[[Swizerland_2011]])
 
 This runs the full Dirichlet perturbation and Condorcet classification pipeline for the first election in the list.
 
