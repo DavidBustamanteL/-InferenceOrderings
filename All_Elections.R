@@ -1,15 +1,12 @@
 ###################################### All Elections #####################################################
-
-# Last edited: 02.02.26 by David BL
-
 ##########################################################################################################
 
 
 # WD and clean memory
 rm(list = ls())
-# Windows -> DO NOT RUN THE BOOTSTRAP PART
+# Windows -> DO NOT USE mclapply()
 #setwd("")
-# Linux -> FOR BOOTSTRAPING
+# Linux -> You can run the script normally
 #setwd("")
 
 # Avoiding scientific notation
@@ -25,8 +22,6 @@ library(stringr)
 library(vote)
 library(data.table)
 library(MCMCpack)
-
-#library(boot)
 library(parallel)
  
 
@@ -50,19 +45,9 @@ length(elections_raw)
 load("resW.RData")
 Peru_2011 = res.partyW$Peru_2011
 Peru_2011$totals
-#head(Peru_2011$data)
 
 # replacing Peru_2011 w. pol. weights into Election Rankings(elections_raw)
-#class(Peru_2011)
-#names(Peru_2011)
-#str(Peru_2011, max.level = 1)
-
 elections_raw[["Peru_2011"]] = as.data.frame(Peru_2011$data)
-
-# Saving the df -> needed once
-#elections_polweights = elections_raw
-#save(elections_polweights, file = "elections_polweights.RData")
-#load("elections_polweights.RData")
 
 # Ensure each element is a data.frame (robust coercion)
 elections = lapply(elections_raw, function(x) {
