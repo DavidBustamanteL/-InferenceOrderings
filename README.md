@@ -79,7 +79,7 @@ For each triplet:
 
 1. Ordering strings are tabulated.
 2. A fixed-length vector of length 13 is created.
-3. The order of entries matches ord_levels exactly.
+3. The order of entries matches ```ord_levels``` exactly.
 
 Missing ordering types receive zero counts.
 
