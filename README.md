@@ -10,7 +10,7 @@ This README focuses exclusively on the main function and its internal subfunctio
 
 # Data
 
-The data employed is from the replication files provided in [Barbaro and Kurella (2025)](https://doi.org/10.1007/s11127-025-01353-7). :contentReference[oaicite:0]{index=0}
+The data employed is from the replication files provided in [Barbaro and Kurella (2025)](https://doi.org/10.1007/s11127-025-01353-7).
 
 
 # Main Function
