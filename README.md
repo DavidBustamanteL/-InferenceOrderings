@@ -106,9 +106,9 @@ Column ordering is enforced to match ```ord_levels``` to ensure stable indexing.
 
 For each of the 13 ordering types, contributions to pairwise contests are precomputed:
 
-- $A vs B$
-- $A vs C$
-- $B vs C$
+- $A$ vs $B$
+- $A$ vs $C$
+- $B$ vs $C$
 
 Rules:
 
