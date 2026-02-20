@@ -16,15 +16,10 @@ This function executes the complete Condorcet-cycle simulation pipeline for a si
 # Arguments
 
 - **df**: a data.frame containing respondent-level rankings (rows = individuals, columns = candidates)
-
 - **N**: number of Dirichlet draws per triplet
-
 - **phi**: concentration scaling parameter for the Dirichlet distribution
-
 - **seed**: random seed for reproducibility
-
 - **pseudocount**: unused placeholder argument
-
 - **ord_levels**: vector of the 13 admissible ranking orderings for three candidates (including ties)
 
 
@@ -34,21 +29,13 @@ This function executes the complete Condorcet-cycle simulation pipeline for a si
 The function returns a list containing:
 
 - **ranking_all**: empirical ranking frequencies for each triplet
-
 - **vec_list**: 13-category count vectors for each triplet
-
 - **prop_list**: normalized proportions for each triplet
-
 - **perturbations**: Dirichlet draws for each triplet
-
 - **outcomes_by_triplet**: Condorcet outcomes for each draw
-
 - **overall_table**: aggregated outcome counts
-
 - **cycle_rate_by_triplet**: cycle probability per triplet
-
 - **overall_cycle_rate**: global cycle probability
-
 - **baseline_outcome**: Condorcet outcome computed from empirical proportions (no perturbation)
 
 
@@ -76,7 +63,6 @@ Examples include:
 The encoding logic works as follows:
 
 - Candidates tied at the same rank are joined with "=".
-
 - Different rank levels are joined with ">".
 
 Each respondent, therefore, contributes exactly one ordering string.
@@ -86,9 +72,9 @@ Each respondent, therefore, contributes exactly one ordering string.
 
 For each triplet:
 
-- 1. Ordering strings are tabulated.
-- 2. A fixed-length vector of length 13 is created.
-- 3. The order of entries matches ord_levels exactly.
+1- Ordering strings are tabulated.
+2- A fixed-length vector of length 13 is created.
+3- The order of entries matches ord_levels exactly.
 
 Missing ordering types receive zero counts.
 
