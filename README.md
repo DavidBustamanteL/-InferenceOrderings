@@ -76,7 +76,7 @@ Each respondent’s ranking over A, B, C is converted into one of 13 canonical o
 - $C \succ A \sim B$
 - $C \succ A \succ B$
 - $C \succ B \succ A$
-
+- 
 
 The encoding logic works as follows:
 
