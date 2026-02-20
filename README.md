@@ -16,7 +16,7 @@ The data employed is from the replication files provided in [Barbaro and Kurella
 # WARNING ⚠️
 **Results: WITH LINUX ONLY!** 
 
-**Urgent:** If you run this script on **Windows**, you must adjust the function — in particular, **do NOT use ```mclapply```**.
+**Urgent:** If you run this script on **Windows**, you must adjust the function. In particular, **do NOT use ```mclapply```**.
 
 
 # Main Function
