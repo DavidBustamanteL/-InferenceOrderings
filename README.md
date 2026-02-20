@@ -61,7 +61,7 @@ Examples include:
 The encoding logic works as follows:
 
 - Candidates tied at the same rank are joined with "=".
-- Different rank levels are joined with ">".
+- The preferences of a candidate over another one are joined with ">".
 
 Each respondent, therefore, contributes exactly one ordering string.
 
