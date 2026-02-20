@@ -1,7 +1,6 @@
 ############################################## DMCP ######################################################
 ##########################################################################################################
 
-
 # WD and clean memory
 rm(list = ls())
 # Windows -> DO NOT USE mclapply()
@@ -377,7 +376,7 @@ print(as.numeric(timing2["elapsed"]) / 60)
 cycle_rates2 = vapply(results_cores, \(x) x$overall_cycle_rate, numeric(1))
 print(summary(cycle_rates2))
 
-# how often do the cycles appear? -> new function with parall. results   --> Peru_2011 out once the pol. weights are added
+# How often do the cycles appear? -> new function with parallel results   -->  Peru_2011 out once the pol. weights are added
 # Where are the "fragile" elections
 fragile = which(cycle_rates2 > 0.01)                      # >1% cycle probability (non w. >5%)
 #fragile
