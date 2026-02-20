@@ -63,7 +63,7 @@ Examples include:
 - A=B>C
 - B>C>A
 - A=B=C
-- $A\sim B \succ C$
+- $A\sim B\succ C$
 
 The encoding logic works as follows:
 
