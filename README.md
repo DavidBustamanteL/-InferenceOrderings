@@ -166,4 +166,4 @@ Ties are handled explicitly at both the respondent and pairwise levels.
 
 Randomness is controlled via the seed argument.
 
-Computational complexity grows combinatorially with the number of candidates (choose(m, 3)).
+Computational complexity grows combinatorially with the number of candidates (choose(m, 3)). 
