@@ -58,18 +58,18 @@ Within each triplet, candidates are relabeled locally as A, B, and C to standard
 Each respondent’s ranking over A, B, C is converted into one of 13 canonical ordering strings:
 
 - $A \sim B \sim C$
-- $A \succ B \succ C$
-- $A \succ C \succ B$
-- $B \succ A \succ C$
-- $B \succ C \succ A$
-- $C \succ A \succ B$
-- $C \succ B \succ A$
 - $A \sim B \succ C$
 - $A \sim C \succ B$
-- $B \sim C \succ A$
 - $A \succ B \sim C$
+- $A \succ B \succ C$
+- $A \succ C \succ B$
+- $B \sim C \succ A$
 - $B \succ A \sim C$
+- $B \succ A \succ C$
+- $B \succ C \succ A$
 - $C \succ A \sim B$
+- $C \succ A \succ B$
+- $C \succ B \succ A$
 
 
 The encoding logic works as follows:
