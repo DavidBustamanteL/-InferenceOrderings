@@ -32,15 +32,15 @@ This function executes the complete Condorcet-cycle simulation pipeline for a si
 
 The function returns a list containing:
 
-- **ranking_all**: empirical ranking frequencies for each triplet
-- **vec_list**: 13-category count vectors for each triplet
-- **prop_list**: normalized proportions for each triplet
-- **perturbations**: Dirichlet draws for each triplet
-- **outcomes_by_triplet**: Condorcet outcomes for each draw
-- **overall_table**: aggregated outcome counts
-- **cycle_rate_by_triplet**: cycle probability per triplet
-- **overall_cycle_rate**: global cycle probability
-- **baseline_outcome**: Condorcet outcome computed from empirical proportions (no perturbation)
+- ```ranking_all```: empirical ranking frequencies for each triplet  
+- ```vec_list```: 13-category count vectors for each triplet  
+- ```prop_list```: normalized proportions for each triplet  
+- ```perturbations```: Dirichlet draws for each triplet  
+- ```outcomes_by_triplet```: Condorcet outcomes for each draw  
+- ```overall_table```: aggregated outcome counts  
+- ```cycle_rate_by_triplet```: cycle probability per triplet  
+- ```overall_cycle_rate```: global cycle probability  
+- ```baseline_outcome```: Condorcet outcome computed from empirical proportions (no perturbation)
 
 
 # Internal Workflow
