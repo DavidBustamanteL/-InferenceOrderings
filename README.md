@@ -7,3 +7,8 @@ The function evaluates all 3-candidate subsets **(triplets)** in an election and
 
 This README focuses exclusively on the main function and its internal subfunctions.
 
+# Main Function
+
+## ```run_one_election(df, N, phi, seed, pseudocount, ord_levels)```
+
+This function executes the complete Condorcet-cycle simulation pipeline for a single election.
