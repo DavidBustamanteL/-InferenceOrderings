@@ -157,4 +157,13 @@ Key outputs:
 - `res$overall_table`  
   A frequency table of all outcomes ("A", "B", "C", "Tie", "Cycle") aggregated across draws and triplets.
 - `res$baseline_outcome`  
-  The Condorcet outcome computed directly from the empirical preference proportions (without Dirichlet perturbation).
+  The Condorcet outcome is computed directly from the empirical preference proportions (without Dirichlet perturbation).
+
+
+## Notes
+
+Ties are handled explicitly at both the respondent and pairwise levels.
+
+Randomness is controlled via the seed argument.
+
+Computational complexity grows combinatorially with the number of candidates (choose(m, 3)).
