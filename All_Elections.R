@@ -5,9 +5,8 @@
 # WD and clean memory
 rm(list = ls())
 # Windows -> DO NOT USE mclapply()
-#setwd("")
 # Linux -> You can run the script normally
-#setwd("")
+setwd("")
 
 # Avoiding scientific notation
 options(scipen = 999)
