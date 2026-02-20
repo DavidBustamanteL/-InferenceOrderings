@@ -152,12 +152,9 @@ Key outputs:
 
 - `res$overall_cycle_rate`  
   The overall probability of observing a Condorcet cycle across all triplets and all Dirichlet draws.
-
 - `res$cycle_rate_by_triplet`  
   A vector containing the cycle probability for each individual triplet.
-
 - `res$overall_table`  
   A frequency table of all outcomes ("A", "B", "C", "Tie", "Cycle") aggregated across draws and triplets.
-
 - `res$baseline_outcome`  
   The Condorcet outcome computed directly from the empirical preference proportions (without Dirichlet perturbation).
