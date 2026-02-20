@@ -1,3 +1,3 @@
 # Inference Orderings
-Replication file to Dirichlet Monte Carlo Perturbations - Barbaro & Bustamante Lazo
+## Replication file to Dirichlet Monte Carlo Perturbations - Barbaro & Bustamante Lazo
 
