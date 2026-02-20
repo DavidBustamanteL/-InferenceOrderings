@@ -50,3 +50,13 @@ The function returns a list containing:
 - **overall_cycle_rate**: global cycle probability
 
 - **baseline_outcome**: Condorcet outcome computed from empirical proportions (no perturbation)
+
+
+# Internal Workflow
+## 1. Triplet Construction
+
+All 3-candidate subsets are generated using combinations of the candidate columns.
+
+For an election with m candidates, the number of triplets equals choose(m, 3).
+
+Within each triplet, candidates are relabeled locally as A, B, and C to standardize processing.
