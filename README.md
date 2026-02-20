@@ -93,3 +93,22 @@ For each triplet, N draws are generated from a Dirichlet distribution using thes
 Each draw represents a plausible population preference distribution consistent with the observed data.
 
 Column ordering is enforced to match ```ord_levels``` to ensure stable indexing.
+
+
+## 5. Pairwise Preference Shares ```(pair_share and idx)```
+
+For each of the 13 ordering types, contributions to pairwise contests are precomputed:
+
+- A vs B
+- A vs C
+- B vs C
+
+Rules:
+
+- Strict preference contributes 1.
+- Strict loss contributes 0.
+- Tie contributes 0.5.
+
+Index sets (idx) store which ordering columns imply wins, losses, or ties for each candidate pair.
+
+These index sets allow fast vectorized computation of pairwise majority shares from each Dirichlet draw.
