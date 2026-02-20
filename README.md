@@ -126,3 +126,25 @@ For every Dirichlet draw:
    - **"Cycle"** if a majority cycle occurs  
 
 This classification is performed independently for every triplet and every draw.
+
+
+## 7. Aggregation
+
+The function computes:
+
+- cycle_rate_by_triplet: fraction of draws producing cycles for each triplet
+- overall_cycle_rate: fraction of cycles across all triplets and all draws
+- overall_table: total counts of each outcome
+- baseline_outcome: Condorcet outcome derived directly from empirical proportions
+
+
+## Minimal Usage
+
+```res = run_one_election(elections[[1]])```
+
+```
+res$overall_cycle_rate
+res$cycle_rate_by_triplet
+res$overall_table
+res$baseline_outcome
+```
