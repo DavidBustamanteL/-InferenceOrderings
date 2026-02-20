@@ -116,7 +116,7 @@ Rules:
 - Strict loss contributes 0.
 - Tie contributes 0.5.
 
-Index sets (idx) store which ordering columns imply wins, losses, or ties for each candidate pair.
+Index sets ```(idx)``` store which ordering columns imply wins, losses, or ties for each candidate pair.
 
 These index sets allow fast vectorized computation of pairwise majority shares from each Dirichlet draw.
 
@@ -139,10 +139,10 @@ This classification is performed independently for every triplet and every draw.
 
 The function computes:
 
-- cycle_rate_by_triplet: fraction of draws producing cycles for each triplet
-- overall_cycle_rate: fraction of cycles across all triplets and all draws
-- overall_table: total counts of each outcome
-- baseline_outcome: Condorcet outcome derived directly from empirical proportions
+- ```cycle_rate_by_triplet```: fraction of draws producing cycles for each triplet
+- ```overall_cycle_rate```: fraction of cycles across all triplets and all draws
+- ```overall_table```: total counts of each outcome
+- ```baseline_outcome```: Condorcet outcome derived directly from empirical proportions
 
 
 ## Minimal Usage
