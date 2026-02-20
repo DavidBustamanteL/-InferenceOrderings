@@ -161,7 +161,7 @@ The function computes:
 
 A single election can be analyzed, e.g., by calling:
 
-    res = run_one_election(elections[[Swizerland_2011]])
+    res = run_one_election(elections[[Switzerland_2011]])
 
 This runs the full Dirichlet perturbation and Condorcet classification pipeline for the first election in the list.
 
