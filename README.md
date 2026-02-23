@@ -29,7 +29,7 @@ This function executes the complete Condorcet-cycle simulation pipeline for a si
 
 - ```df```: a data.frame containing respondent-level rankings (rows = individuals, columns = candidates)  
 - ```N```: number of Dirichlet draws per triplet  
-- ```phi```: concentration scaling parameter for the Dirichlet distribution  
+- ```phi```: precision scaling parameter for the Dirichlet distribution  
 - ```seed```: random seed for reproducibility  
 - ```pseudocount```: unused placeholder argument  
 - ```ord_levels```: vector of the 13 admissible ranking orderings for three candidates (including ties)
