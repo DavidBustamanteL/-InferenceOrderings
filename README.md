@@ -103,7 +103,7 @@ Outputs:
 
 ## 4. Dirichlet Perturbations
 
-Observed counts (frequencies) are scaled by the concentration parameter:
+Observed counts (frequencies) are scaled by the precision parameter:
 
     α = φ · c
 
