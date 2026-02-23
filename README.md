@@ -1,6 +1,7 @@
 # Inference Orderings DMCP
 
-## Replication file for Dirichlet Monte Carlo Perturbations — \nBarbaro & Bustamante Lazo (2026, manuscript submitted for publication)
+## Replication file for Dirichlet Monte Carlo Perturbations
+### Barbaro & Bustamante Lazo (2026, manuscript submitted for publication)
 
 This repository implements the function ```run_one_election()``` to estimate Condorcet cycle probabilities in ranked-choice elections using Dirichlet Monte Carlo perturbations of empirically observed preference distributions.
 
