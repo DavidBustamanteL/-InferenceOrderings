@@ -375,10 +375,10 @@ summary_table
 # Parallelization  -> slightly over 5 min
 
 # adjustable components
-phi_run = 1
 seed_run = 55234
 nb.reps = 10000               
-
+phi_run = 1
+                 
 timing2 = system.time({
 results_cores = mclapply(
   elections,
