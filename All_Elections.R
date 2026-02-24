@@ -3,7 +3,7 @@
 
 # WD and clean memory
 rm(list = ls())
-# Windows -> DO NOT USE mclapply()
+# Windows -> DO NOT USE mclapply(), see ReadMe-File for an alternative
 # Linux -> You can run the script normally
 setwd("")
 
