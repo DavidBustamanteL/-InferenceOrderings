@@ -22,8 +22,6 @@ library(data.table)
 library(MCMCpack)
 library(scales)
 library(ggplot2)
-
-#library(boot)
 library(parallel)
  
 
