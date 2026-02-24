@@ -399,7 +399,7 @@ fragile
 cycle_rates2[fragile]
 
 # and Switzerland_2011? (or any specific election)
-cycle_rates2["Switzerland_2011"]                          # Overall not bad, just some triplet trouble some (see case study, same results)
+cycle_rates2["Switzerland_2011"]                          # Overall not bad, just some triplet troublesome (see case study, same results)
 
 
 
