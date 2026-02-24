@@ -20,6 +20,10 @@ library(stringr)
 library(vote)
 library(data.table)
 library(MCMCpack)
+library(scales)
+library(ggplot2)
+
+#library(boot)
 library(parallel)
  
 
@@ -43,9 +47,20 @@ length(elections_raw)
 load("resW.RData")
 Peru_2011 = res.partyW$Peru_2011
 Peru_2011$totals
+head(Peru_2011$data)
 
 # replacing Peru_2011 w. pol. weights into Election Rankings(elections_raw)
+class(Peru_2011)
+names(Peru_2011)
+str(Peru_2011, max.level = 1)
+
 elections_raw[["Peru_2011"]] = as.data.frame(Peru_2011$data)
+
+# Saving the df -> needed once
+#elections_polweights = elections_raw
+#save(elections_polweights, file = "elections_polweights.RData")
+#load("elections_polweights.RData")
+
 
 # Ensure each element is a data.frame (robust coercion)
 elections = lapply(elections_raw, function(x) {
@@ -61,12 +76,12 @@ if (exists("caseid.party") && length(caseid.party) == length(elections)) {
 }
 
 
-#### 2. Full pipeline as a function ####
+#### 2. Full ch2011 pipeline as a function ####
 run_one_election = function(
   df,
   N = nb.rep,
-  phi = 1,
-  seed = 55234,
+  phi = phi_run,
+  seed = seed_run,
   pseudocount = 0,
   ord_levels = c(
     "A=B=C",
@@ -164,7 +179,6 @@ run_one_election = function(
   })
 
   # Preserving the labels
-
   perturbations = lapply(perturbations, function(m) {
     if (is.null(colnames(m))) {
       if (ncol(m) != length(ord_levels)) stop("Number of columns does not match ord_levels.")
@@ -174,7 +188,6 @@ run_one_election = function(
   })
 
   names(perturbations) = names(alpha)
-
 
   # 2.4 Cycles #
   pair_share = function(ord, x, y) {
@@ -277,6 +290,7 @@ run_one_election = function(
   gc()
 }
 
+
 # total nr of ind-level obs -> 381,770
 n_obs_per_election = sapply(elections_raw, nrow)
 sum(n_obs_per_election)
@@ -341,49 +355,50 @@ summary_table = data.frame(
 summary_table
 
 
-
-
 # Results ---> WITH LINUX!!! 
 # Urgent: Adjust the function in case you run this script on Windows; in particular, don't use mclapply!
 # NO parallelization -> around 13:5 min
-timing1 = system.time({
-results_nocores = lapply(
-  elections,
-  run_one_election,
-  phi = 1, seed = 55234
-)
-})
-timing1
-as.numeric(timing1["elapsed"]) / 60
+#timing1 = system.time({
+#results_nocores = lapply(
+#  elections,
+#  run_one_election,
+#  phi = 1, seed = 55234                        # Setting phi as needed, standard is phi == 1
+#)
+#})
+#timing1
+#as.numeric(timing1["elapsed"]) / 60
 
-cycle_rates1 = vapply(results_nocores, \(x) x$overall_cycle_rate, numeric(1))
-print(summary(cycle_rates1))
+#cycle_rates1 = vapply(results_nocores, \(x) x$overall_cycle_rate, numeric(1))
+#summary(cycle_rates1)
 
 
 # Parallelization  -> slightly over 5 min
+phi_run = 1
+seed_run = 55234
+
 timing2 = system.time({
 results_cores = mclapply(
   elections,
-  run_one_election,
-  phi = 1, seed = 55234,
-  mc.cores = parallel::detectCores(),
+  run_one_election,                                             
+  mc.cores = detectCores() - 2,                           # choose nr of cores
   mc.set.seed = TRUE
 )
 })
 timing2
-print(as.numeric(timing2["elapsed"]) / 60)
+as.numeric(timing2["elapsed"]) / 60
 
 cycle_rates2 = vapply(results_cores, \(x) x$overall_cycle_rate, numeric(1))
-print(summary(cycle_rates2))
+summary(cycle_rates2)
 
-# How often do the cycles appear? -> new function with parallel results   -->  Peru_2011 out once the pol. weights are added
+
+# How often do the cycles appear? -> new function with parallel results   --> Peru_2011 out once the pol. weights are added
 # Where are the "fragile" elections
 fragile = which(cycle_rates2 > 0.01)                      # >1% cycle probability (non w. >5%)
-#fragile
-print(cycle_rates2[fragile])
+fragile
+cycle_rates2[fragile]
 
 # and Switzerland_2011? (or any specific election)
-#cycle_rates2["Switzerland_2011"]                          # Overall not bad, just some triplet trouble some (see case study, same results)
+cycle_rates2["Switzerland_2011"]                          # Overall not bad, just some triplet trouble some (see case study, same results)
 
 
 
