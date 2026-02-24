@@ -71,7 +71,7 @@ if (exists("caseid.party") && length(caseid.party) == length(elections)) {
 }
 
 
-#### 2. Full ch2011 pipeline as a function ####
+#### 2. Full pipeline as a function ####
 run_one_election = function(
   df,
   N = nb.rep,
