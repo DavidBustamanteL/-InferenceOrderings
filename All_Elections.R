@@ -375,7 +375,7 @@ summary_table
 # adjustable components
 seed_run = 55234
 nb.reps = 10000               
-phi_run = 1                                               # phi sensibility 0,5; 0,75; 1,25; 1,5 
+phi_run = 1                                               # phi sensibility 0.5; 0.75; 1.25; 1.5 
                  
 timing2 = system.time({
 results_cores = mclapply(
