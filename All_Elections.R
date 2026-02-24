@@ -29,9 +29,6 @@ library(parallel)
 
 #### 1. Initial Setup ####
 
-# Nr. of Reps
-nb.rep = 10000
-
 # Getting the data 
 load("rankings.RData")
 
@@ -358,6 +355,10 @@ summary_table
 # Results ---> WITH LINUX!!! 
 # Urgent: Adjust the function in case you run this script on Windows; in particular, don't use mclapply!
 # NO parallelization -> around 13:5 min
+#phi_run = 1
+#seed_run = 55234
+#nb.rep = 10000
+                 
 #timing1 = system.time({
 #results_nocores = lapply(
 #  elections,
@@ -373,8 +374,11 @@ summary_table
 
 
 # Parallelization  -> slightly over 5 min
+
+# adjustable components
 phi_run = 1
 seed_run = 55234
+nb.reps = 10000               
 
 timing2 = system.time({
 results_cores = mclapply(
