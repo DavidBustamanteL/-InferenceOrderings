@@ -374,9 +374,16 @@ summary_table
 
 # adjustable components
 seed_run = 55234
-nb.reps = 10000               
-phi_run = 1                                               # phi sensibility 0.5; 0.75; 1.25; 1.5 
-                 
+nb.rep = 10000
+
+# phi sensibility 0.5; 0.75; 1.25; 1.5   -->  Otherwise, let phi be 1 for standard results
+phi_run = as.numeric(readline(prompt = "Please insert the desired phi value: "))
+
+if (is.na(phi_run)) {
+  stop("Invalid input. Please enter a numeric value.")
+} 
+
+# measuring full pipeline runtime and getting the results                 
 timing2 = system.time({
 results_cores = mclapply(
   elections,
