@@ -362,8 +362,7 @@ summary_table
 #timing1 = system.time({
 #results_nocores = lapply(
 #  elections,
-#  run_one_election,
-#  phi = 1, seed = 55234                        # Setting phi as needed, standard is phi == 1
+#  run_one_election
 #)
 #})
 #timing1
@@ -397,7 +396,7 @@ summary(cycle_rates2)
 
 # How often do the cycles appear? -> new function with parallel results   --> Peru_2011 out once the pol. weights are added
 # Where are the "fragile" elections
-fragile = which(cycle_rates2 > 0.01)                      # >1% cycle probability (non w. >5%)
+fragile = which(cycle_rates2 > 0.01)                      # >1% cycle probability (non w. >5% when phi == 1)
 fragile
 cycle_rates2[fragile]
 
