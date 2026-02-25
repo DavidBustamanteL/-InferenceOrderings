@@ -12,6 +12,7 @@ This README focuses exclusively on the main function and its internal subfunctio
 # Data Accessibility 📊 
 We used the same [(CSES project)](https://cses.org/data-download/) data as provided in the replication files in [Barbaro and Kurella (2025)](https://doi.org/10.1007/s11127-025-01353-7).
 
+
 # Computational Requirements 🖥️
 1. Computer with Linux operating system
 2. **R version:** 4.5.2 "[Not] Part in a Rumble"
@@ -26,12 +27,12 @@ We used the same [(CSES project)](https://cses.org/data-download/) data as provi
 
 
 # WARNING ⚠️
-**Results: WITH LINUX ONLY!** 
+**The results have been tested WITH LINUX ONLY!** 
 
 **Urgent:** If you run this script on **Windows**, you must adjust the function. In particular, **do NOT use ```mclapply```**.
 
 **Alternatives:** 
-1. Run the (outcommented) Timing1 function without parallelization (it will take longer)
+1. Run the (outcommented) Timing1 function without parallelization (it will take longer).
 2. Instead of ```mclapply```, follow the steps provided by the ```future.apply``` package in CRAN:
    - https://cran.r-project.org/web/packages/future.apply/index.html
 
