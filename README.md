@@ -15,7 +15,7 @@ We used the same [(CSES project)](https://cses.org/data-download/) data as provi
 # Computational Requirements 🖥️
 1. Computer with Linux operating system
 2. **R version:** 4.5.2 "[Not] Part in a Rumble"
-3. ** Required R Libraries:**
+3. **Required R Libraries:**
    - `dplyr`
    - `magrittr`
    - `tidyverse`
