@@ -12,6 +12,18 @@ This README focuses exclusively on the main function and its internal subfunctio
 # Data
 We used the same data [(CSES)](https://cses.org/data-download/) as provided in the replication files in [Barbaro and Kurella (2025)](https://doi.org/10.1007/s11127-025-01353-7).
 
+# Computational Requirements
+Computer with Linux operating system
+R version 4.5.2 "[Not] Part in a Rumble"
+R Packages:
+- dplyr
+- magrittr
+- tidyverse
+- tidyr
+- stringr
+- data.table
+- MCMCpack
+
 
 # WARNING ⚠️
 **Results: WITH LINUX ONLY!** 
