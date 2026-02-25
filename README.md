@@ -10,7 +10,7 @@ This README focuses exclusively on the main function and its internal subfunctio
 
 
 # Data
-The data employed is from the replication files provided in [Barbaro and Kurella (2025)](https://doi.org/10.1007/s11127-025-01353-7).
+We us the same data (CSES)[https://cses.org/data-download/] employed is from the replication files provided in [Barbaro and Kurella (2025)](https://doi.org/10.1007/s11127-025-01353-7).
 
 
 # WARNING ⚠️
