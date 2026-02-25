@@ -19,8 +19,8 @@ The data employed is from the replication files provided in [Barbaro and Kurella
 **Urgent:** If you run this script on **Windows**, you must adjust the function. In particular, **do NOT use ```mclapply```**.
 
 **Alternatives:** 
-1. Run the (outcommented) Timing1 function without parallelization
-2. Instead of ```mclapply```, follow the steps provided in:
+1. Run the (outcommented) Timing1 function without parallelization (it will take longer)
+2. Instead of ```mclapply```, follow the steps provided by the ```future.apply``` package in CRAN:
    - https://cran.r-project.org/web/packages/future.apply/index.html
 
 
