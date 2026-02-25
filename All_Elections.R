@@ -352,6 +352,7 @@ summary_table
 
 # Results ---> WITH LINUX!!! 
 # Urgent: Adjust the function in case you run this script on Windows; in particular, don't use mclapply!
+                 
 # NO parallelization -> around 13:5 min
 #phi_run = 1
 #seed_run = 55234
