@@ -13,16 +13,16 @@ This README focuses exclusively on the main function and its internal subfunctio
 We used the same data [(CSES)](https://cses.org/data-download/) as provided in the replication files in [Barbaro and Kurella (2025)](https://doi.org/10.1007/s11127-025-01353-7).
 
 # Computational Requirements
-Computer with Linux operating system
-R version 4.5.2 "[Not] Part in a Rumble"
-R Packages:
-- dplyr
-- magrittr
-- tidyverse
-- tidyr
-- stringr
-- data.table
-- MCMCpack
+1. Computer with Linux operating system
+2. R version 4.5.2 "[Not] Part in a Rumble"
+3. R Packages:
+   - dplyr
+   - magrittr
+   - tidyverse
+   - tidyr
+   - stringr
+   - data.table
+   - MCMCpack
 
 
 # WARNING ⚠️
