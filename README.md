@@ -33,7 +33,7 @@ We used the same [(CSES project)](https://cses.org/data-download/) data as provi
 
 **Alternatives:** 
 1. Run the (outcommented) Timing1 function without parallelization (it will take longer).
-2. Instead of ```mclapply```, you can get familiar with the library ```future.apply``` in CRAN:
+2. Instead of ```mclapply```, recode the function use **(under your own responsability)** the ```future.apply``` library available in CRAN:
    - https://cran.r-project.org/web/packages/future.apply/index.html
 
 
