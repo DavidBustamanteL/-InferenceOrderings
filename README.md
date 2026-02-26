@@ -17,7 +17,10 @@ We used the same [CSES project](https://cses.org/data-download/) data as provide
 
 # Dataset and Script List 🗂️
 1. Main Replication File:
-   - All_Elections.R
+   - `All_Elections.R`
+2. Datasets:
+   - CSES project data: `rankings.RData`
+   - Political Behavior Weights: `resW.RData`
 
 # Computational Requirements 🖥️
 1. Computer with Linux operating system
