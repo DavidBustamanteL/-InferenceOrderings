@@ -23,7 +23,7 @@ We used the same [CSES project](https://cses.org/data-download/) data as provide
    - Political Behavior Weights: `resW.RData`
 
 # Computational Requirements 🖥️
-1. Computer with Linux operating system
+1. Linux operating system
 2. **R version:** 4.5.2 "[Not] Part in a Rumble"
 3. **Required R Libraries:**
    - `dplyr`
