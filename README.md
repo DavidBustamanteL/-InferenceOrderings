@@ -20,7 +20,7 @@ We used the same [CSES project](https://cses.org/data-download/) data as provide
    - `All_Elections.R`
 2. Datasets:
    - CSES project data: `rankings.RData`
-   - Political Behavior Weights (PBW): `resW.RData`
+   - Political Behaviour Weights (PBW): `resW.RData`
 
 # Computational Requirements 🖥️
 1. Linux operating system
