@@ -4,6 +4,7 @@
 *Authors: Salvatore Barbaro and David Bustamante Lazo*\
 (2026, manuscript submitted for publication)
 
+# Overview 📂
 This repository implements the function ```run_one_election()``` to estimate Condorcet cycle probabilities in ranked-choice elections using Dirichlet Monte Carlo perturbations of empirically observed preference distributions.
 
 The function evaluates all 3-candidate subsets **(triplets)** in an election and computes the probability of observing a majority cycle under sampling uncertainty.
