@@ -5,22 +5,26 @@
 (2026, manuscript submitted for publication)
 
 # Overview 📂
+This README focuses exclusively on the main function and its internal subfunctions. Detailed descriptions of the code's functionality are included as comments within the provided main R-file.
+
 This repository implements the function ```run_one_election()``` to estimate Condorcet cycle probabilities in ranked-choice elections using Dirichlet Monte Carlo perturbations of empirically observed preference distributions.
 
 The function evaluates all 3-candidate subsets **(triplets)** in an election and computes the probability of observing a majority cycle under sampling uncertainty.
-
-This README focuses exclusively on the main function and its internal subfunctions.
 
 
 # Data Accessibility 📊 
 We used the same [CSES project](https://cses.org/data-download/) data as provided in the replication files in [Barbaro and Kurella (2025)](https://doi.org/10.1007/s11127-025-01353-7).
 
 # Script and Dataset List 🗂️
-1. Main Replication File:
+1. Main Replication R-File:
    - `All_Elections.R`
 2. Datasets:
    - CSES project data: `rankings.RData`
    - Political Behaviour Weights (PBW): `resW.RData`
+  
+## Controlled Randomness ⚙️
+All replications use a fixed seed value for reproducibility:  
+**Seed Value**: `55234` (the main authors' zip code).
 
 # Computational Requirements 🖥️
 1. **Linux operating system**
